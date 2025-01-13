@@ -1,0 +1,19 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "狐脚本"; Text ="载入成功"; Duration = 3; })
+
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/hun/main/jmlibrary1.lua"))();        
+local win = ui:new("HE")
+--
+local UITab355 = win:Tab("『自瞄』",'7734068321')
+
+local about = UITab355:section("『😡』",true)
+
+about:Button("汉化阿尔自瞄",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/sgbs/main/%E4%B8%81%E4%B8%81%20%E6%B1%89%E5%8C%96%E8%87%AA%E7%9E%84.txt"))()
+end)
+
+about:Button("道观", function()
+--老外撸管脚本
+--汉化作者人
+--QQ群363416230
+loadstring(game:HttpGet("https://raw.githubusercontent.com/human-SARK-SRD/SARK/refs/heads/main/SARK%E5%85%A8%E6%96%B0%E6%92%B8%E7%AE%A1%E8%84%9A%E6%9C%AC.lua"))()
+
