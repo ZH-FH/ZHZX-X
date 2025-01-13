@@ -1,103 +1,103 @@
-功能通知(title1，Text1，icon1，Time1)
-游戏：GetService("StarterGui")：SetCore("发送通知", {
-title=title1，
-text=Text1，
-icon=icon1，
-持续时间=时间1，
-})
-结束
-通知("智狐中心","作者智狐","rbxassetid://17360377302",3)
-通知("永久免费","祝你玩的开心","rbxassetid://17360377302",3)
-通知("永久免费","没有盈利","rbxassetid://17360377302",3)
-通知("智狐中心","永久免费","rbxassetid://17360377302",3)
-通知("拒绝跑路","拒绝倒卖","rbxassetid://17360377302",3)
-通知("启动完成","祝你玩的开心","rbxassetid://17360377302",5)
+function Notify(Title1, Text1, Icon1, Time1)
+  game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = Title1,
+    Text = Text1,
+    Icon = Icon1,
+    Duration = Time1,
+  })
+end
+Notify("智狐中心", "作者智狐", "rbxassetid://17360377302", 3)
+Notify("永久免费", "祝你玩的开心","rbxassetid://17360377302",3)
+Notify("永久免费", "没有盈利","rbxassetid://17360377302",3)
+Notify("智狐中心", "永久免费","rbxassetid://17360377302",3)
+Notify("拒绝跑路", "拒绝倒卖","rbxassetid://17360377302",3)
+Notify("启动完成", "祝你玩的开心","rbxassetid://17360377302",5)
 
-当地的库=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/dingding123hhh/hun/main/jmlibrary1.lua"))();
-当地的窗户=库：新建("智狐中心 ");
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-Library/refs/heads/main/61%E7%A0%81.txt"))();		
+local Window = Library:new("智狐中心 ");
 
-当地的学分=窗口：标签("公告",'16060333448')
-当地的bin=学分：节("信息",正确)
-当地的关于=学分：节("作者",正确)
+local creds = Window:Tab("公告",'16060333448')
+local bin = creds:section("信息",true)
+local about = creds:section("作者",true)
 
-当地的main=窗口：选项卡("主要",'16060333448')
-当地的一般=主要：截面("玩家",正确)
-当地的GX=主要：截面("通用",正确)
-当地的Qu=主要：截面("ESP",正确)
-当地的QW=主要：截面("其他",正确)
+local Main = Window:Tab("主要",'16060333448')
+local General = Main:section("玩家",true)
+local GX = Main:section("通用",true)
+local QU = Main:section("ESP",true)
+local QW = Main:section("其他",true)
 
-当地的JSDGt=窗口：标签("驾驶帝国",'16060333448')
-当地的JSDG=JSDGt：截面("自动&刷钱",正确)
+local JSDGt = Window:Tab("驾驶帝国",'16060333448')
+local JSDG = JSDGt:section("自动&刷钱",true)
 
-当地的FMDHt=窗口：选项卡("伐木大亨2",'16060333448')
-当地的FMDH=FMDHt：截面("伐木大亨2",正确)
+local FMDHt = Window:Tab("伐木大亨2",'16060333448')
+local FMDH = FMDHt:section("伐木大亨2",true)
 
-当地的SKQSt=窗口：选项卡("鲨口求生2",'16060333448')
-当地的SKQS=SKQSt：截面("鲨口&求生",正确)
+local SKQSt = Window:Tab("鲨口求生2",'16060333448')
+local SKQS = SKQSt:section("鲨口&求生",true)
 
-当地的DoorsT=窗口：标签("门",'16060333448')
-当地的doors=DoorsT：截面("通用&功能",正确)
-当地的DOORSR=DoorsT：截面("透视",正确)
-当地的BP=DoorsT：截面("其他",正确)
+local DoorsT = Window:Tab("doors",'16060333448')
+local Doors = DoorsT:section("通用&功能",true)
+local DOORSR = DoorsT:section("透视",true)
+local BP = DoorsT:section("其他",true)
 
-当地的LLCQt=窗口：选项卡("力量传奇",'16060333448')
-当地的LLCQ=LLCQt：节("主要&功能",正确)
-当地的LLQR=LLCQt：截面("自动收集",正确)
-当地的LLRQ=LLCQt：节("跑步机",正确)
-当地的LLRE=LLCQt：截面("岩石",正确)
-当地的LLQQ=LLCQt：截面("传送位置",正确)
+local LLCQt = Window:Tab("力量传奇",'16060333448')
+local LLCQ = LLCQt:section("主要&功能",true)
+local LLQR = LLCQt:section("自动收集",true)
+local LLRQ = LLCQt:section("跑步机",true)
+local LLRE = LLCQt:section("岩石",true)
+local LLQQ = LLCQt:section("传送位置",true)
 
-当地的JSCQt=窗口：选项卡("极速传奇",'16060333448')
-当地的JSCQ=JSCQt：截面("自动&玩家",正确)
-当地的JSQC=JSCQt：截面("传送位置",正确)
+local JSCQt = Window:Tab("极速传奇",'16060333448')
+local JSCQ = JSCQt:section("自动&玩家",true)
+local JSQC = JSCQt:section("传送位置",true)
 
-当地的RZCQt=窗口：选项卡("忍者传奇",'16060333448')
-当地的RZCQ=RZCQt：截面("自动&模式",正确)
-当地的RZQC=RZCQt：截面("传送位置",正确)
+local RZCQt = Window:Tab("忍者传奇",'16060333448')
+local RZCQ = RZCQt:section("自动&模式",true)
+local RZQC = RZCQt:section("传送位置",true)
 
-当地的JYRSt=窗口：选项卡("监狱人生",'16060333448')
-当地的TLT=JYRSt：截面("整合",正确)
-当地的jyrs=JYRSt：截面("监狱&主要",正确)
-当地的DL=JYRSt：截面("身份",正确)
-当地的DP=JYRSt：截面("其他",正确)
-当地的DX=JYRSt：截面("传送地点",正确)
+local JYRSt = Window:Tab("监狱人生",'16060333448')
+local TLT = JYRSt:section("整合",true)
+local JYRS = JYRSt:section("监狱&主要",true)
+local DL = JYRSt:section("身份",true)
+local DP = JYRSt:section("其他",true)
+local DX = JYRSt:section("传送地点",true)
 
-当地的ZDYSt=窗口：选项卡("战斗勇士",'16060333448')
-当地的ZDYS=ZDYSt：截面("主要",正确)
+local ZDYSt = Window:Tab("战斗勇士",'16060333448')
+local ZDYS = ZDYSt:section("主要",true)
 
-当地的HBTXT=窗口：选项卡("河北唐县",'16060333448')
-当地的HBTX=HBTXt：截面("主的",正确)
-当地的HBXT=HBTXT：截面("传送位置",正确)
+local HBTXt = Window:Tab("河北唐县",'16060333448')
+local HBTX = HBTXt:section("主的",true)
+local HBXT = HBTXt:section("传送位置",true)
 
-当地的ZRZHt=窗口：选项卡("自然灾害",'16060333448')
-当地的ZRZH=ZRZHt：截面("自然&灾害",正确)
-当地的rhe=ZRZHt：截面("玩家",正确)
+local ZRZHt = Window:Tab("自然灾害",'16060333448')
+local ZRZH = ZRZHt:section("自然&灾害",true)
+local RHE = ZRZHt:section("玩家",true)
 
-当地的EVT=窗口：选项卡("逃避",'16060333448')
-当地的EV=EVt：截面("逃避",正确)
+local EVt = Window:Tab("Evade",'16060333448')
+local EV = EVt:section("Evade",true)
 
-当地的XGT=窗口：选项卡("新更",'16060333448')
-当地的XG=XGT：截面("新更",正确)
-当地的GN=XGT：截面("实用工具",正确)
+local XGt = Window:Tab("新更",'16060333448')
+local XG = XGt:section("新更",true)
+local GN = XGt:section("实用工具",true)
 
-当地的OCT=窗口：选项卡("其他脚本",'16060333448')
-当地的OSC=OSCT：截面("通用脚本",正确)
+local OSCt = Window:Tab("其他脚本",'16060333448')
+local OSC = OSCt:section("通用脚本",true)
 
-当地的SIJt=窗口：选项卡("视觉",'16060333448')
-当地的SIJ=SIJt：截面("视觉",正确)
-当地的GIY=SIJt：截面("光影",正确)
+local SIJt = Window:Tab("视觉",'16060333448')
+local SIJ = SIJt:section("视觉",true)
+local GIY = SIJt:section("光影",true)
 
-当地的QH=窗口：选项卡("俄亥俄州",'16060333448')
-当地的QB=QH：截面("自动模式",正确)
+local QH = Window:Tab("俄亥俄州",'16060333448')
+local QB = QH:section("自动模式",true)
 
-当地的EF=窗口：选项卡("FE",'16060333448')
-当地的Fe=EF：截面("FE",正确)
+local EF = Window:Tab("FE",'16060333448')
+local FE = EF:section("FE",true)
 
-当地的en=窗口：选项卡("作者通告",'16060333448')
-当地的NE=EN：截面("玩家公告!",正确)
+local EN = Window:Tab("作者通告",'16060333448')
+local NE = EN:section("玩家公告!",true)
 
-当地的Vt=窗口：选项卡("其他注入器",'16060333448')
-当地的YV=VT：截面("输入器整合",正确)
+local VT = Window:Tab("其他注入器",'16060333448')
+local YV = VT:section("输入器整合",true)
 
 local OH = Window:Tab("火箭发射模拟",'16060333448')
 local HO = OH:section("主要",true)
