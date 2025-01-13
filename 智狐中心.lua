@@ -13,10 +13,10 @@ icon=icon1，
 通知("拒绝跑路","拒绝倒卖","rbxassetid://17360377302",3)
 通知("启动完成","祝你玩的开心","rbxassetid://17360377302",5)
 
-loadstring(游戏：HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-Library/refs/heads/main/61%E7%A0%81.txt"))();
-当地的window=库：新建("智狐中心 ");
+当地的库=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/dingding123hhh/hun/main/jmlibrary1.lua"))();
+当地的窗户=库：新建("智狐中心 ");
 
-当地的creds=窗口：标签("公告",'16060333448')
+当地的学分=窗口：标签("公告",'16060333448')
 当地的bin=学分：节("信息",正确)
 当地的关于=学分：节("作者",正确)
 
@@ -26,7 +26,7 @@ loadstring(游戏：HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-L
 当地的Qu=主要：截面("ESP",正确)
 当地的QW=主要：截面("其他",正确)
 
-当地的JSDGt=窗口：Tab("驾驶帝国",'16060333448')
+当地的JSDGt=窗口：标签("驾驶帝国",'16060333448')
 当地的JSDG=JSDGt：截面("自动&刷钱",正确)
 
 当地的FMDHt=窗口：选项卡("伐木大亨2",'16060333448')
@@ -35,7 +35,7 @@ loadstring(游戏：HttpGet("https://raw.githubusercontent.com/xcmsnd/DrRay-UI-L
 当地的SKQSt=窗口：选项卡("鲨口求生2",'16060333448')
 当地的SKQS=SKQSt：截面("鲨口&求生",正确)
 
-当地的DoorsT=窗口：Tab("门",'16060333448')
+当地的DoorsT=窗口：标签("门",'16060333448')
 当地的doors=DoorsT：截面("通用&功能",正确)
 当地的DOORSR=DoorsT：截面("透视",正确)
 当地的BP=DoorsT：截面("其他",正确)
