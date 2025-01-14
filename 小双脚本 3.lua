@@ -1378,6 +1378,9 @@ Tab:AddButton({
     Name = "智狐中心脚本",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ZH-FH/ZHZX-X/refs/heads/main/%E6%99%BA%E7%8B%90%E4%B8%AD%E5%BF%83.lua"))()
+    end
+})
+
 Tab:AddButton({
     Name = "禁漫中心",
     Callback = function()
