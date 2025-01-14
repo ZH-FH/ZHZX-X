@@ -1,4 +1,4 @@
-/local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "双脚本",    Text = "耐心等待（反挂机已开启）",    Duration = 5, })print("反挂机开启")		local vu = game:GetService("VirtualUser")		game:GetService("Players").LocalPlayer.Idled:connect(function()		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		   wait(1)		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		end)
+local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "双脚本",    Text = "耐心等待（反挂机已开启）",    Duration = 5, })print("反挂机开启")		local vu = game:GetService("VirtualUser")		game:GetService("Players").LocalPlayer.Idled:connect(function()		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		   wait(1)		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		end)
 
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
 
@@ -1373,13 +1373,6 @@ local Tab = Window:MakeTab({
     Name = "脚本中心",
     Icon = "rbxassetid://10527577695",
     PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name = "智狐中心",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZH-FH/ZHZX-X/refs/heads/main/%E6%99%BA%E7%8B%90%E4%B8%AD%E5%BF%83.lua"))()
-        end
 })
 
 Tab:AddButton({
